@@ -1,4 +1,4 @@
-#### updated 9/9/2023 💫
+#### updated 9/9/2023x1 💫
 
 ###### contact me [smoothschannel](https://twitch.tv/smoothschannel) or [discord](https://discord.gg/tDZT7QSx8m)
 
@@ -6,7 +6,7 @@
 
 ###### Turning down fRenderResolutionSetting and monitor resolution can drastically free up being gpu limited and gain fps.
 
-###### DLSS v3.1.1.0(from cyberpunk) with Starfield FSR2 Bridge DLSS mod can look fine at lowest fRenderResolutionSetting and give you the most fps boost at your resolution.
+###### Starfield FSR2 Bridge DLSS MOD is your friend
 
 ###### Increase fRenderResolutionSetting or monitor resolution till you are satified with the rasterization quality and your gpu isn't 100% usage all the time.
 
@@ -69,7 +69,7 @@ uDirectionalLightShadowMapResolution=1024;low
 uFocusShadowResolution=1024;med
 uShadowFilteringQuality=0;med
 uShadowFilteringTransparencies=0;
-bContactShadowsEnabled=0;off
+bContactShadowsEnabled=1;on
 uTotalDynamicShadowMapRenderCount=16;med
 uAdditionalDynamicOnlyLightsBudget=1;med
 bDirectionalShadowmapsUseLODFade=1;
@@ -87,11 +87,11 @@ uReflectionProbeFacesToRenderPerFrame=2;med
 uReflectionProbeArraySize=24;med
 
 [Particle]
-uParticleLightingParticleCountQuality=2;
+uParticleLightingParticleCountQuality=1;med
 bEnableHalfResParticles=0;
 
 [VolumetricLighting]
-uraVolumetricQuality=2;
+uraVolumetricQuality=1;med
 bFogMapBlurHalfRes=1;low
 bVolumetricIndirectForceFallback=1;
 uraVolumetricLightingPhaseFunction=1;low
@@ -110,11 +110,11 @@ bEnableTerrainPlanarMapping=1;
 fTerrainDisplacementErrorThreshold=1.0;med
 
 [DynamicResolution]
-fRenderResolutionSetting=0.6;
+fRenderResolutionSetting=0.60;
 
 [ContactShadows]
-iContactShadowsQuality=0;off
-bContactShadowsEnabled=0;off
+iContactShadowsQuality=1;med
+bContactShadowsEnabled=1;on
 bContactShadowHalfResolution=1;low
 iBlurRadius=2;
 
@@ -146,7 +146,7 @@ fMaxAnisotropy=8;
 [Camera]
 fFPWorldFOV=90;
 fTPWorldFOV=90;
-fFarCameraDistanceOffset=-0.5;
+fFarCameraDistanceOffset=0;
 
 [General]
 SIntroSequence=0;
