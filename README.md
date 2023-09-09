@@ -1,10 +1,14 @@
-#### release 9/8/2023 💫
+#### updated 9/9/2023 💫
 
 ###### contact me [smoothschannel](https://twitch.tv/smoothschannel) or [discord](https://discord.gg/tDZT7QSx8m)
 
-###### high overall quality replacement/optimization REMEMBER to change your overall quality to HIGH again after you replace and save the file contents***
+###### High overall quality replacement/optimization REMEMBER to change your overall quality to HIGH again after you replace and save the file contents*
 
-###### Use fRenderResolutionSetting=0.6 if you use FSR2 or need more res. but using Starfield FSR2 Bridge DLSS mod and nvngx_dlss.dll v3.1.1.0 (from cyberpunk) at default quality looks fine.
+###### Turning down fRenderResolutionSetting and monitor resolution can drastically free up being gpu limited and gain fps.
+
+###### DLSS v3.1.1.0(from cyberpunk) with Starfield FSR2 Bridge DLSS mod can look fine at lowest fRenderResolutionSetting and give you the most fps boost at your resolution.
+
+###### Increase fRenderResolutionSetting or monitor resolution till you are satified with the rasterization quality and your gpu isn't 100% usage all the time.
 
 ---
 
@@ -27,20 +31,20 @@ bDepthOfFieldEnable=1;
 uMaxDecals=25;low
 uMaxSkinDecals=5;low
 uMaxSkinDecalsPerActor=5;low
-iMaxDecalsPerFrame=3;low
+iMaxDecalsPerFrame=1;custom
 iMaxSkinDecalsPerFrame=1;low
 
 [Grass]
-fGrassStartFadeDistance=130.0;test
-fGrassRandomCullFactor=2.3;test
-fGrassStartRandomCullDistance=20.0;added low
+fGrassStartFadeDistance=150.0;custom
+fGrassRandomCullFactor=0.25;custom
+fGrassStartRandomCullDistance=0.25;custom added
 uGrassMeshInstanceCullingSSFootprint=12;low
 
 [SAO]
 fGTAORadius=0.3;
 fGTAOPower=1.4;med
 fGTAOMaxAttenuationDistance=50.0;
-fDistantAOMidSAORadius=2.5;med
+fDistantAOMidSAORadius=2.5;
 fDistantAOMidMaxAttenuationDistance=600.0;med
 fDistantAOMidPower=1.3;med
 fDistantAOMidBetaThicknessCorrection=0.2;
@@ -50,15 +54,15 @@ fDistantAOFarPower=2.0;med
 fDistantAOFarBetaThicknessCorrection=0.15;
 
 [Shadows]
-fShadowCascadeSplitDistance0=6.0;low
-fShadowCascadeSplitDistance1=12.0;low
-fShadowCascadeSplitDistance2=50.0;low
-fShadowCascadeSplitDistance3=400.0;low
+fShadowCascadeSplitDistance0=7.0;med
+fShadowCascadeSplitDistance1=25.0;med
+fShadowCascadeSplitDistance2=60.0;med
+fShadowCascadeSplitDistance3=400.0
 uTerrainShadowMapSize=512;med
 uShadowMapCount4096=0;
-uShadowMapCount2048=8;
+uShadowMapCount2048=0;custom
 uShadowMapCount1024=16;
-uShadowMapCount512=32;
+uShadowMapCount512=36;med
 uShadowMapCount256=128;
 uShadowMapCount128=128;
 uDirectionalLightShadowMapResolution=1024;low
@@ -74,8 +78,8 @@ bDirectionalShadowmapsUseLODFade=1;
 uMotionBlurQuality=0;off
 
 [GlobalIllumination]
-uGIFallbackQuality=0;med test
-bHalfResIndirect=1;low test
+uGIFallbackQuality=0;med
+bHalfResIndirect=1;low
 
 [Reflections]
 uReflectionsResolution=128;med
@@ -83,36 +87,33 @@ uReflectionProbeFacesToRenderPerFrame=2;med
 uReflectionProbeArraySize=24;med
 
 [Particle]
-uParticleLightingParticleCountQuality=1;med
+uParticleLightingParticleCountQuality=2;
 bEnableHalfResParticles=0;
 
 [VolumetricLighting]
-uraVolumetricQuality=1;med
-bFogMapBlurHalfRes=1;low test
-bVolumetricIndirectForceFallback=1
-uraVolumetricLightingPhaseFunction=0;test
+uraVolumetricQuality=2;
+bFogMapBlurHalfRes=1;low
+bVolumetricIndirectForceFallback=1;
+uraVolumetricLightingPhaseFunction=1;low
 
 [VariableRateShading]
-fVariableRateShadingVarianceCutoff=0.1;med test
-
-[Geometry]
-bEnableHalfResGeometries=1;added test
+fVariableRateShadingVarianceCutoff=0.1;med
 
 [Crowd]
-fCrowdActorPlatformSpecificSpawnScalar=0.6000;med test
-uMaxCrowdActorCount=175;custom test
+fCrowdActorPlatformSpecificSpawnScalar=0.8;custom
+uMaxCrowdActorCount=180;custom
 
 [Terrain]
 bEnableStochasticTiling=1;
-bEnableStochasticTilingDominantPlane=1;
+bEnableStochasticTilingDominantPlane=0;med
 bEnableTerrainPlanarMapping=1;
-fTerrainDisplacementErrorThreshold=0.5;
+fTerrainDisplacementErrorThreshold=1.0;med
 
 [DynamicResolution]
-fRenderResolutionSetting=0.5;test
+fRenderResolutionSetting=0.6;
 
 [ContactShadows]
-iContactShadowsQuality=1;med
+iContactShadowsQuality=0;off
 bContactShadowsEnabled=0;off
 bContactShadowHalfResolution=1;low
 iBlurRadius=2;
@@ -121,7 +122,10 @@ iBlurRadius=2;
 iContactShadowsQuality=1;med
 
 [PostEffects]
-fCASSharpnessSetting=0;custom none
+fCASSharpnessSetting=0;off
+
+[Geometry]
+bEnableHalfResGeometries=1;added
 ```
 
 ---
@@ -146,7 +150,6 @@ fFarCameraDistanceOffset=-0.5;
 
 [General]
 SIntroSequence=0;
-uMainMenuDelayBeforeAllowSkip=0;
 bAlwaysActive=1;
 
 [Controls]
