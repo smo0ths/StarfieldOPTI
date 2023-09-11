@@ -1,4 +1,4 @@
-#### updated 9/9/2023x1 💫
+#### updated 9/11/2023 💫
 
 ###### contact me [smoothschannel](https://twitch.tv/smoothschannel) or [discord](https://discord.gg/tDZT7QSx8m)
 
@@ -57,10 +57,10 @@ fDistantAOFarBetaThicknessCorrection=0.15;
 fShadowCascadeSplitDistance0=7.0;med
 fShadowCascadeSplitDistance1=25.0;med
 fShadowCascadeSplitDistance2=60.0;med
-fShadowCascadeSplitDistance3=400.0
-uTerrainShadowMapSize=512;med
+fShadowCascadeSplitDistance3=400.0;med
+uTerrainShadowMapSize=1024;
 uShadowMapCount4096=0;
-uShadowMapCount2048=0;custom
+uShadowMapCount2048=4;med
 uShadowMapCount1024=16;
 uShadowMapCount512=36;med
 uShadowMapCount256=128;
@@ -100,8 +100,8 @@ uraVolumetricLightingPhaseFunction=1;low
 fVariableRateShadingVarianceCutoff=0.1;med
 
 [Crowd]
-fCrowdActorPlatformSpecificSpawnScalar=0.8;custom
-uMaxCrowdActorCount=180;custom
+fCrowdActorPlatformSpecificSpawnScalar=0.5;custom
+uMaxCrowdActorCount=125;custom
 
 [Terrain]
 bEnableStochasticTiling=1;
