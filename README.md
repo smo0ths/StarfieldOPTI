@@ -1,4 +1,4 @@
-#### updated 9/12/2023 💫
+#### updated 9/12/2023~ 💫
 
 ###### contact me [smoothschannel](https://twitch.tv/smoothschannel) or [discord](https://discord.gg/tDZT7QSx8m)
 
@@ -25,19 +25,19 @@ start %windir%\explorer.exe “C:\SteamLibrary\steamapps\common\Starfield\High.i
 ```python
 [Display]
 bVolumetricLightingEnable=1;high
-bDepthOfFieldEnable=1;high
+bDepthOfFieldEnable=0;low
 
 [Decals]
-uMaxDecals=25;low
-uMaxSkinDecals=5;low
-uMaxSkinDecalsPerActor=5;low
-iMaxDecalsPerFrame=1;custom
-iMaxSkinDecalsPerFrame=1;low
+uMaxDecals=50;med
+uMaxSkinDecals=5;med
+uMaxSkinDecalsPerActor=5;med
+iMaxDecalsPerFrame=5;med
+iMaxSkinDecalsPerFrame=3;med
 
 [Grass]
-fGrassStartFadeDistance=150.0;custom
-fGrassRandomCullFactor=0.25;custom
-fGrassStartRandomCullDistance=0.25;added custom
+fGrassStartFadeDistance=100.0;low
+fGrassRandomCullFactor=2.5;low
+fGrassStartRandomCullDistance=10.0;low
 uGrassMeshInstanceCullingSSFootprint=12;low
 
 [SAO]
@@ -66,7 +66,7 @@ uShadowMapCount512=1;custom
 uShadowMapCount256=0;custom
 uShadowMapCount128=1;custom
 uDirectionalLightShadowMapResolution=2048;med
-uFocusShadowResolution=128;
+uFocusShadowResolution=128;custom
 uShadowFilteringQuality=0;med
 uShadowFilteringTransparencies=0;med
 bContactShadowsEnabled=1;high
@@ -79,7 +79,7 @@ uMotionBlurQuality=0;custom
 
 [GlobalIllumination]
 uGIFallbackQuality=0;med
-bHalfResIndirect=0;high
+bHalfResIndirect=1;low
 
 [Reflections]
 uReflectionsResolution=128;med
