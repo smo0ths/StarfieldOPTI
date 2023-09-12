@@ -1,4 +1,4 @@
-#### updated 9/12/2023~ 💫
+#### updated 9/12/2023x2 💫
 
 ###### contact me [smoothschannel](https://twitch.tv/smoothschannel) or [discord](https://discord.gg/tDZT7QSx8m)
 
@@ -92,9 +92,9 @@ bEnableHalfResParticles=0;high
 
 [VolumetricLighting]
 uraVolumetricQuality=1;med
-bFogMapBlurHalfRes=1;low
+bFogMapBlurHalfRes=0;high
 bVolumetricIndirectForceFallback=1;high
-uraVolumetricLightingPhaseFunction=1;low
+uraVolumetricLightingPhaseFunction=0;high
 
 [VariableRateShading]
 fVariableRateShadingVarianceCutoff=0.15;low
