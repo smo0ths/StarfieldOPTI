@@ -1,4 +1,4 @@
-#### updated 9/11/2023x2 💫
+#### updated 9/12/2023 💫
 
 ###### contact me [smoothschannel](https://twitch.tv/smoothschannel) or [discord](https://discord.gg/tDZT7QSx8m)
 
@@ -24,8 +24,8 @@ start %windir%\explorer.exe “C:\SteamLibrary\steamapps\common\Starfield\High.i
 
 ```python
 [Display]
-bVolumetricLightingEnable=1;
-bDepthOfFieldEnable=1;
+bVolumetricLightingEnable=1;high
+bDepthOfFieldEnable=1;high
 
 [Decals]
 uMaxDecals=25;low
@@ -37,49 +37,49 @@ iMaxSkinDecalsPerFrame=1;low
 [Grass]
 fGrassStartFadeDistance=150.0;custom
 fGrassRandomCullFactor=0.25;custom
-fGrassStartRandomCullDistance=0.25;custom added
+fGrassStartRandomCullDistance=0.25;added custom
 uGrassMeshInstanceCullingSSFootprint=12;low
 
 [SAO]
-fGTAORadius=0.3;
+fGTAORadius=0.3;high
 fGTAOPower=1.4;med
-fGTAOMaxAttenuationDistance=50.0;
-fDistantAOMidSAORadius=2.5;
+fGTAOMaxAttenuationDistance=50.0;high
+fDistantAOMidSAORadius=2.5;high
 fDistantAOMidMaxAttenuationDistance=600.0;med
 fDistantAOMidPower=1.3;med
-fDistantAOMidBetaThicknessCorrection=0.2;
+fDistantAOMidBetaThicknessCorrection=0.2;high
 fDistantAOFarSAORadius=7.0;med
-fDistantAOFarMaxAttenuationDistance=3000.0;
+fDistantAOFarMaxAttenuationDistance=3000.0;high
 fDistantAOFarPower=2.0;med
-fDistantAOFarBetaThicknessCorrection=0.15;
+fDistantAOFarBetaThicknessCorrection=0.15;high
 
 [Shadows]
-fShadowCascadeSplitDistance0=7.0;med
-fShadowCascadeSplitDistance1=25.0;med
-fShadowCascadeSplitDistance2=60.0;med
-fShadowCascadeSplitDistance3=400.0;med
-uTerrainShadowMapSize=1024;
-uShadowMapCount4096=0;
-uShadowMapCount2048=4;med
-uShadowMapCount1024=8;custom
+fShadowCascadeSplitDistance0=6.0;low
+fShadowCascadeSplitDistance1=12.0;low
+fShadowCascadeSplitDistance2=50.0;low
+fShadowCascadeSplitDistance3=400.0;low
+uTerrainShadowMapSize=128;custom
+uShadowMapCount4096=0;custom
+uShadowMapCount2048=3;custom
+uShadowMapCount1024=0;custom
 uShadowMapCount512=1;custom
-uShadowMapCount256=1;custom
+uShadowMapCount256=0;custom
 uShadowMapCount128=1;custom
 uDirectionalLightShadowMapResolution=2048;med
-uFocusShadowResolution=1024;med
-uShadowFilteringQuality=1;
-uShadowFilteringTransparencies=1;ultra
-bContactShadowsEnabled=1;on
-uTotalDynamicShadowMapRenderCount=8;custom
+uFocusShadowResolution=128;
+uShadowFilteringQuality=0;med
+uShadowFilteringTransparencies=0;med
+bContactShadowsEnabled=1;high
+uTotalDynamicShadowMapRenderCount=16;med
 uAdditionalDynamicOnlyLightsBudget=1;med
-bDirectionalShadowmapsUseLODFade=1;
+bDirectionalShadowmapsUseLODFade=1;high
 
 [MotionBlur]
-uMotionBlurQuality=0;off
+uMotionBlurQuality=0;custom
 
 [GlobalIllumination]
 uGIFallbackQuality=0;med
-bHalfResIndirect=1;low
+bHalfResIndirect=0;high
 
 [Reflections]
 uReflectionsResolution=128;med
@@ -88,44 +88,41 @@ uReflectionProbeArraySize=24;med
 
 [Particle]
 uParticleLightingParticleCountQuality=1;med
-bEnableHalfResParticles=0;
+bEnableHalfResParticles=0;high
 
 [VolumetricLighting]
 uraVolumetricQuality=1;med
 bFogMapBlurHalfRes=1;low
-bVolumetricIndirectForceFallback=1;
+bVolumetricIndirectForceFallback=1;high
 uraVolumetricLightingPhaseFunction=1;low
 
 [VariableRateShading]
-fVariableRateShadingVarianceCutoff=0.1;med
+fVariableRateShadingVarianceCutoff=0.15;low
 
 [Crowd]
 fCrowdActorPlatformSpecificSpawnScalar=0.5;custom
 uMaxCrowdActorCount=125;custom
 
 [Terrain]
-bEnableStochasticTiling=1;
+bEnableStochasticTiling=1;high
 bEnableStochasticTilingDominantPlane=0;med
-bEnableTerrainPlanarMapping=1;
+bEnableTerrainPlanarMapping=1;high
 fTerrainDisplacementErrorThreshold=1.0;med
 
 [DynamicResolution]
-fRenderResolutionSetting=0.60;
+fRenderResolutionSetting=0.60;custom
 
 [ContactShadows]
 iContactShadowsQuality=1;med
-bContactShadowsEnabled=1;on
-bContactShadowHalfResolution=1;low
-iBlurRadius=2;
+bContactShadowsEnabled=1;high
+bContactShadowHalfResolution=0;high
+iBlurRadius=1;custom
 
 [ContactShadow]
 iContactShadowsQuality=1;med
 
 [PostEffects]
-fCASSharpnessSetting=0;off
-
-[Geometry]
-bEnableHalfResGeometries=1;added
+fCASSharpnessSetting=0;custom
 ```
 
 ---
