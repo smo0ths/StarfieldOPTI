@@ -1,4 +1,4 @@
-#### updated 9/13/2023 💫💫💫
+#### updated 9/13/2023 💫💫💫💫
 
 ###### contact me [smoothschannel](https://twitch.tv/smoothschannel) or [discord](https://discord.gg/tDZT7QSx8m)
 
