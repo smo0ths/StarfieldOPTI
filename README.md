@@ -1,4 +1,4 @@
-#### updated 9/12/2023x2 💫
+#### updated 9/12/2023x3 💫
 
 ###### contact me [smoothschannel](https://twitch.tv/smoothschannel) or [discord](https://discord.gg/tDZT7QSx8m)
 
@@ -64,7 +64,7 @@ uShadowMapCount2048=3;custom
 uShadowMapCount1024=0;custom
 uShadowMapCount512=1;custom
 uShadowMapCount256=0;custom
-uShadowMapCount128=1;custom
+uShadowMapCount128=2;custom
 uDirectionalLightShadowMapResolution=2048;med
 uFocusShadowResolution=128;custom
 uShadowFilteringQuality=0;med
