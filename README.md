@@ -1,4 +1,4 @@
-#### updated 9/13/2023 💫💫 optimal shadow quality*?
+#### updated 9/13/2023 💫💫💫
 
 ###### contact me [smoothschannel](https://twitch.tv/smoothschannel) or [discord](https://discord.gg/tDZT7QSx8m)
 
@@ -64,7 +64,7 @@ uShadowMapCount2048=4;custom
 uShadowMapCount1024=0;custom
 uShadowMapCount512=0;custom
 uShadowMapCount256=0;custom
-uShadowMapCount128=3;custom
+uShadowMapCount128=64;custom
 uDirectionalLightShadowMapResolution=2048;med
 uFocusShadowResolution=128;custom
 uShadowFilteringQuality=0;med
@@ -79,7 +79,7 @@ uMotionBlurQuality=0;custom
 
 [GlobalIllumination]
 uGIFallbackQuality=0;med
-bHalfResIndirect=0;high
+bHalfResIndirect=1;low
 
 [Reflections]
 uReflectionsResolution=128;med
