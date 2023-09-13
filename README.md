@@ -92,7 +92,7 @@ bEnableHalfResParticles=0;high
 
 [VolumetricLighting]
 uraVolumetricQuality=1;med
-bFogMapBlurHalfRes=0;high
+bFogMapBlurHalfRes=1;low
 bVolumetricIndirectForceFallback=1;high
 uraVolumetricLightingPhaseFunction=0;high
 
