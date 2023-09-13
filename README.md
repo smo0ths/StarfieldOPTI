@@ -1,4 +1,4 @@
-#### updated 9/12/2023x3 💫
+#### updated 9/13/2023 💫💫 optimal shadow quality*?
 
 ###### contact me [smoothschannel](https://twitch.tv/smoothschannel) or [discord](https://discord.gg/tDZT7QSx8m)
 
@@ -60,11 +60,11 @@ fShadowCascadeSplitDistance2=50.0;low
 fShadowCascadeSplitDistance3=400.0;low
 uTerrainShadowMapSize=128;custom
 uShadowMapCount4096=0;custom
-uShadowMapCount2048=3;custom
+uShadowMapCount2048=4;custom
 uShadowMapCount1024=0;custom
-uShadowMapCount512=1;custom
+uShadowMapCount512=0;custom
 uShadowMapCount256=0;custom
-uShadowMapCount128=2;custom
+uShadowMapCount128=3;custom
 uDirectionalLightShadowMapResolution=2048;med
 uFocusShadowResolution=128;custom
 uShadowFilteringQuality=0;med
@@ -79,7 +79,7 @@ uMotionBlurQuality=0;custom
 
 [GlobalIllumination]
 uGIFallbackQuality=0;med
-bHalfResIndirect=1;low
+bHalfResIndirect=0;high
 
 [Reflections]
 uReflectionsResolution=128;med
@@ -137,17 +137,12 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 </details>
 
 ```python
-[Display]
-fMaxAnisotropy=8;
-
-[Camera]
-fFPWorldFOV=90;
-fTPWorldFOV=90;
-fFarCameraDistanceOffset=0;
-
 [General]
 SIntroSequence=0;
 bAlwaysActive=1;
+
+[Display]
+fMaxAnisotropy=8;
 
 [Controls]
 bMouseAcceleration=0;
@@ -155,4 +150,9 @@ fPitchSpeedRatio=1;
 fIronSightsPitchSpeedRatio=1;
 fMouseHeadingXScale=0.0199999996;
 fMouseHeadingYScale=0.0199999996;
+
+[Camera]
+fFPWorldFOV=90;
+fTPWorldFOV=90;
+fFarCameraDistanceOffset=0;
 ```
