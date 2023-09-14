@@ -1,4 +1,4 @@
-#### updated 9/13/2023 💫💫💫💫
+#### updated 9/14/2023 💫
 
 ###### contact me [smoothschannel](https://twitch.tv/smoothschannel) or [discord](https://discord.gg/tDZT7QSx8m)
 
@@ -60,12 +60,12 @@ fShadowCascadeSplitDistance2=50.0;low
 fShadowCascadeSplitDistance3=400.0;low
 uTerrainShadowMapSize=128;custom
 uShadowMapCount4096=0;custom
-uShadowMapCount2048=4;custom
-uShadowMapCount1024=0;custom
+uShadowMapCount2048=0;custom
+uShadowMapCount1024=11;custom
 uShadowMapCount512=0;custom
 uShadowMapCount256=0;custom
 uShadowMapCount128=64;custom
-uDirectionalLightShadowMapResolution=2048;med
+uDirectionalLightShadowMapResolution=1024;med
 uFocusShadowResolution=128;custom
 uShadowFilteringQuality=0;med
 uShadowFilteringTransparencies=0;med
@@ -94,7 +94,7 @@ bEnableHalfResParticles=0;high
 uraVolumetricQuality=1;med
 bFogMapBlurHalfRes=1;low
 bVolumetricIndirectForceFallback=1;high
-uraVolumetricLightingPhaseFunction=0;high
+uraVolumetricLightingPhaseFunction=1;low
 
 [VariableRateShading]
 fVariableRateShadingVarianceCutoff=0.15;low
@@ -152,7 +152,7 @@ fMouseHeadingXScale=0.0199999996;
 fMouseHeadingYScale=0.0199999996;
 
 [Camera]
-fFPWorldFOV=90;
-fTPWorldFOV=90;
+fFPWorldFOV=100;
+fTPWorldFOV=100;
 fFarCameraDistanceOffset=0;
 ```
