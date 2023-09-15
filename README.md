@@ -1,4 +1,4 @@
-#### updated 9/14/2023 💫💫
+#### updated 9/15/2023 💫
 
 ###### contact me [smoothschannel](https://twitch.tv/smoothschannel) or [discord](https://discord.gg/tDZT7QSx8m)
 
@@ -35,29 +35,29 @@ iMaxDecalsPerFrame=5;med
 iMaxSkinDecalsPerFrame=3;med
 
 [Grass]
-fGrassStartFadeDistance=100.0;low
+fGrassStartFadeDistance=100;low
 fGrassRandomCullFactor=2.5;low
-fGrassStartRandomCullDistance=10.0;low
+fGrassStartRandomCullDistance=10;low
 uGrassMeshInstanceCullingSSFootprint=12;low
 
 [SAO]
 fGTAORadius=0.3;high
 fGTAOPower=1.4;med
-fGTAOMaxAttenuationDistance=50.0;high
+fGTAOMaxAttenuationDistance=50;high
 fDistantAOMidSAORadius=2.5;high
-fDistantAOMidMaxAttenuationDistance=600.0;med
+fDistantAOMidMaxAttenuationDistance=600;med
 fDistantAOMidPower=1.3;med
 fDistantAOMidBetaThicknessCorrection=0.2;high
-fDistantAOFarSAORadius=7.0;med
-fDistantAOFarMaxAttenuationDistance=3000.0;high
-fDistantAOFarPower=2.0;med
+fDistantAOFarSAORadius=7;med
+fDistantAOFarMaxAttenuationDistance=3000;high
+fDistantAOFarPower=2;med
 fDistantAOFarBetaThicknessCorrection=0.15;high
 
 [Shadows]
-fShadowCascadeSplitDistance0=6.0;low
-fShadowCascadeSplitDistance1=12.0;low
-fShadowCascadeSplitDistance2=50.0;low
-fShadowCascadeSplitDistance3=400.0;low
+fShadowCascadeSplitDistance0=6;low
+fShadowCascadeSplitDistance1=12;low
+fShadowCascadeSplitDistance2=50;low
+fShadowCascadeSplitDistance3=400;low
 uTerrainShadowMapSize=128;custom
 uShadowMapCount4096=0;custom
 uShadowMapCount2048=0;custom
@@ -107,7 +107,7 @@ uMaxCrowdActorCount=125;custom
 bEnableStochasticTiling=1;high
 bEnableStochasticTilingDominantPlane=0;med
 bEnableTerrainPlanarMapping=1;high
-fTerrainDisplacementErrorThreshold=1.0;med
+fTerrainDisplacementErrorThreshold=1;med
 
 [DynamicResolution]
 fRenderResolutionSetting=0.60;custom
@@ -138,21 +138,26 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 
 ```python
 [General]
-SIntroSequence=0;
 bAlwaysActive=1;
+SIntroSequence=0;
+uMainMenuDelayBeforeAllowSkip=1000;
 
 [Display]
+bDepthOfFieldEnable=0;
+bDynamicResolutionEnabled=1;
+bEnableVsync=0;
+fFilmGrainIntensity=0.5;
 fMaxAnisotropy=8;
 
 [Controls]
 bMouseAcceleration=0;
-fPitchSpeedRatio=1;
 fIronSightsPitchSpeedRatio=1;
 fMouseHeadingXScale=0.0199999996;
 fMouseHeadingYScale=0.0199999996;
+fPitchSpeedRatio=1;
 
 [Camera]
-fFPWorldFOV=100;
-fTPWorldFOV=100;
 fFarCameraDistanceOffset=0;
+fFPWorldFOV=90;
+fTPWorldFOV=87;
 ```
