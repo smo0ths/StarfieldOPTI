@@ -1,4 +1,4 @@
-#### updated 9/15/2023 💫
+#### updated 9/15/2023 💫💫
 
 ###### contact me [smoothschannel](https://twitch.tv/smoothschannel) or [discord](https://discord.gg/tDZT7QSx8m)
 
@@ -26,6 +26,11 @@ start %windir%\explorer.exe “C:\SteamLibrary\steamapps\common\Starfield\High.i
 [Display]
 bVolumetricLightingEnable=1;high
 bDepthOfFieldEnable=0;low
+fMaxAnisotropy=8;added
+bDynamicResolutionEnabled=1;added
+bEnableVsync=0;added
+fFilmGrainIntensity=0.5;added
+fMaxAnisotropy=8;added
 
 [Decals]
 uMaxDecals=50;med
@@ -141,13 +146,6 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 bAlwaysActive=1;
 SIntroSequence=0;
 uMainMenuDelayBeforeAllowSkip=1000;
-
-[Display]
-bDepthOfFieldEnable=0;
-bDynamicResolutionEnabled=1;
-bEnableVsync=0;
-fFilmGrainIntensity=0.5;
-fMaxAnisotropy=8;
 
 [Controls]
 bMouseAcceleration=0;
