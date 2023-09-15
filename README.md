@@ -1,4 +1,4 @@
-#### updated 9/15/2023 💫💫💫💫💫
+#### updated 9/15/2023 💫💫💫💫💫💫💫
 
 ###### contact me [smoothschannel](https://twitch.tv/smoothschannel) or [discord](https://discord.gg/tDZT7QSx8m)
 
@@ -62,21 +62,21 @@ fShadowCascadeSplitDistance0=6;low
 fShadowCascadeSplitDistance1=12;low
 fShadowCascadeSplitDistance2=50;low
 fShadowCascadeSplitDistance3=400;low
-uTerrainShadowMapSize=128;custom
+uTerrainShadowMapSize=256;low
 uShadowMapCount4096=0;custom
 uShadowMapCount2048=0;custom
-uShadowMapCount1024=11;custom
+uShadowMapCount1024=12;custom
 uShadowMapCount512=2;custom
-uShadowMapCount256=0;custom
-uShadowMapCount128=16;custom
+uShadowMapCount256=32;custom
+uShadowMapCount128=48;custom
 uDirectionalLightShadowMapResolution=1024;med
 uFocusShadowResolution=512;custom
 uShadowFilteringQuality=0;med
 uShadowFilteringTransparencies=0;high
 bContactShadowsEnabled=1;high
-uTotalDynamicShadowMapRenderCount=16;med
+uTotalDynamicShadowMapRenderCount=12;low
 uAdditionalDynamicOnlyLightsBudget=1;med
-bDirectionalShadowmapsUseLODFade=1;high
+bDirectionalShadowmapsUseLODFade=0;med
 
 [MotionBlur]
 uMotionBlurQuality=0;custom
