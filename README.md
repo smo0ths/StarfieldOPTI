@@ -1,4 +1,4 @@
-#### updated 9/21/2023 💫
+#### updated 10/6/2023 💫
 
 ###### contact me [smoothschannel](https://twitch.tv/smoothschannel) or [discord](https://discord.gg/tDZT7QSx8m)
 
@@ -6,7 +6,7 @@
 
 ###### Turning down fRenderResolutionSetting and monitor resolution can drastically free up being gpu limited and gain fps.
 
-###### Starfield FSR2 Bridge DLSS MOD is your friend
+###### Starfield FSR2 Bridge DLSS MOD is your friend preset_override.txt set to D
 
 ###### Increase fRenderResolutionSetting or monitor resolution till you are satified with the rasterization quality and your gpu isn't 100% usage all the time.
 
@@ -26,9 +26,6 @@ start %windir%\explorer.exe “C:\SteamLibrary\steamapps\common\Starfield\High.i
 [Display]
 bVolumetricLightingEnable=1;high
 bDepthOfFieldEnable=0;low
-bDynamicResolutionEnabled=1;added
-bEnableVsync=0;added
-fMaxAnisotropy=8;added
 
 [Decals]
 uMaxDecals=50;med
@@ -44,36 +41,36 @@ fGrassStartRandomCullDistance=10;low
 uGrassMeshInstanceCullingSSFootprint=12;low
 
 [SAO]
-fGTAORadius=0.3;high
-fGTAOPower=1.4;med
-fGTAOMaxAttenuationDistance=50;high
-fDistantAOMidSAORadius=2.5;high
+fGTAORadius=0.3;default
+fGTAOPower=1.5;low
+fGTAOMaxAttenuationDistance=50;default
+fDistantAOMidSAORadius=3;low
 fDistantAOMidMaxAttenuationDistance=600;med
-fDistantAOMidPower=1.3;med
-fDistantAOMidBetaThicknessCorrection=0.2;high
-fDistantAOFarSAORadius=7;med
-fDistantAOFarMaxAttenuationDistance=3000;high
-fDistantAOFarPower=2;med
-fDistantAOFarBetaThicknessCorrection=0.15;high
+fDistantAOMidPower=2;low
+fDistantAOMidBetaThicknessCorrection=0.2;default
+fDistantAOFarSAORadius=8;low
+fDistantAOFarMaxAttenuationDistance=3000;default
+fDistantAOFarPower=2.5;low
+fDistantAOFarBetaThicknessCorrection=0.15;default
 
 [Shadows]
 fShadowCascadeSplitDistance0=6;low
 fShadowCascadeSplitDistance1=12;low
 fShadowCascadeSplitDistance2=50;low
 fShadowCascadeSplitDistance3=400;low
-uTerrainShadowMapSize=256;low
+uTerrainShadowMapSize=128;custom
 uShadowMapCount4096=0;custom
 uShadowMapCount2048=0;custom
-uShadowMapCount1024=16;custom
-uShadowMapCount512=2;custom
-uShadowMapCount256=1;custom
-uShadowMapCount128=1;custom
-uDirectionalLightShadowMapResolution=1024;med
-uFocusShadowResolution=512;custom
+uShadowMapCount1024=0;custom
+uShadowMapCount512=16;custom
+uShadowMapCount256=2;custom
+uShadowMapCount128=24;custom
+uDirectionalLightShadowMapResolution=512;custom
+uFocusShadowResolution=256;custom
 uShadowFilteringQuality=0;med
 uShadowFilteringTransparencies=0;high
-bContactShadowsEnabled=1;high
-uTotalDynamicShadowMapRenderCount=12;low
+bContactShadowsEnabled=0;off
+uTotalDynamicShadowMapRenderCount=16;med
 uAdditionalDynamicOnlyLightsBudget=1;med
 bDirectionalShadowmapsUseLODFade=0;med
 
@@ -94,7 +91,7 @@ uParticleLightingParticleCountQuality=1;med
 bEnableHalfResParticles=0;high
 
 [VolumetricLighting]
-uraVolumetricQuality=1;med
+uraVolumetricQuality=0;low
 bFogMapBlurHalfRes=1;low
 bVolumetricIndirectForceFallback=1;high
 uraVolumetricLightingPhaseFunction=1;low
@@ -103,8 +100,8 @@ uraVolumetricLightingPhaseFunction=1;low
 fVariableRateShadingVarianceCutoff=0.15;low
 
 [Crowd]
-fCrowdActorPlatformSpecificSpawnScalar=0.5;custom
-uMaxCrowdActorCount=125;custom
+fCrowdActorPlatformSpecificSpawnScalar=0.6;med
+uMaxCrowdActorCount=150;med
 
 [Terrain]
 bEnableStochasticTiling=1;high
@@ -113,16 +110,16 @@ bEnableTerrainPlanarMapping=1;high
 fTerrainDisplacementErrorThreshold=1;med
 
 [DynamicResolution]
-fRenderResolutionSetting=0.60;custom
+fRenderResolutionSetting=0.5;med
 
 [ContactShadows]
-iContactShadowsQuality=1;med
-bContactShadowsEnabled=1;high
+iContactShadowsQuality=0;off
+bContactShadowsEnabled=0;off
 bContactShadowHalfResolution=0;high
-iBlurRadius=1;custom
+iBlurRadius=0;custom
 
 [ContactShadow]
-iContactShadowsQuality=1;med
+iContactShadowsQuality=0;off
 
 [PostEffects]
 fCASSharpnessSetting=0;custom
@@ -140,6 +137,18 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 </details>
 
 ```python
+[Display]
+bDynamicResolutionEnabled=1;
+bEnableVsync=0;
+bUseReducedShadingRate=1;
+bHalfResClouds=1;
+bHalfResolutionBlendedPasses=1;
+bHalfResolutionCorrection=1;
+bHDRColorGradingLUT=0;
+bTemporalAA_idTech7=0;
+fMaxAnisotropy=8;
+fMipBiasOffset=-1;
+
 [General]
 bAlwaysActive=1;
 SIntroSequence=0;
