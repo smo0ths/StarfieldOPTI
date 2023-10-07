@@ -1,4 +1,4 @@
-#### updated 10/6/2023 💫
+#### updated 10/6/2023 💫💫
 
 ###### contact me [smoothschannel](https://twitch.tv/smoothschannel) or [discord](https://discord.gg/tDZT7QSx8m)
 
@@ -46,11 +46,11 @@ fGTAOPower=1.5;low
 fGTAOMaxAttenuationDistance=50;default
 fDistantAOMidSAORadius=3;low
 fDistantAOMidMaxAttenuationDistance=600;med
-fDistantAOMidPower=2;low
+fDistantAOMidPower=1.8;custom
 fDistantAOMidBetaThicknessCorrection=0.2;default
 fDistantAOFarSAORadius=8;low
 fDistantAOFarMaxAttenuationDistance=3000;default
-fDistantAOFarPower=2.5;low
+fDistantAOFarPower=2.3;custom
 fDistantAOFarBetaThicknessCorrection=0.15;default
 
 [Shadows]
