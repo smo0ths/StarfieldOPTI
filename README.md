@@ -1,4 +1,4 @@
-#### updated 10/6/2023 💫💫
+#### updated 10/9/2023 💫
 
 ###### contact me [smoothschannel](https://twitch.tv/smoothschannel) or [discord](https://discord.gg/tDZT7QSx8m)
 
@@ -9,6 +9,8 @@
 ###### Starfield FSR2 Bridge DLSS MOD is your friend preset_override.txt set to D
 
 ###### Increase fRenderResolutionSetting or monitor resolution till you are satified with the rasterization quality and your gpu isn't 100% usage all the time.
+
+###### negative fMipBiasOffset can help sharpen textures when upscaling/upsampling but will cause shimmering if not done right
 
 ---
 
@@ -28,45 +30,45 @@ bVolumetricLightingEnable=1;high
 bDepthOfFieldEnable=0;low
 
 [Decals]
-uMaxDecals=50;med
+uMaxDecals=20;custom
 uMaxSkinDecals=5;med
 uMaxSkinDecalsPerActor=5;med
-iMaxDecalsPerFrame=5;med
-iMaxSkinDecalsPerFrame=3;med
+iMaxDecalsPerFrame=3;low
+iMaxSkinDecalsPerFrame=1;low
 
 [Grass]
-fGrassStartFadeDistance=100;low
+fGrassStartFadeDistance=75;custom
 fGrassRandomCullFactor=2.5;low
 fGrassStartRandomCullDistance=10;low
 uGrassMeshInstanceCullingSSFootprint=12;low
 
 [SAO]
-fGTAORadius=0.3;default
+fGTAORadius=0.3;def
 fGTAOPower=1.5;low
-fGTAOMaxAttenuationDistance=50;default
-fDistantAOMidSAORadius=3;low
+fGTAOMaxAttenuationDistance=50;def
+fDistantAOMidSAORadius=2.8;custom
 fDistantAOMidMaxAttenuationDistance=600;med
 fDistantAOMidPower=1.8;custom
-fDistantAOMidBetaThicknessCorrection=0.2;default
+fDistantAOMidBetaThicknessCorrection=0.2;def
 fDistantAOFarSAORadius=8;low
-fDistantAOFarMaxAttenuationDistance=3000;default
+fDistantAOFarMaxAttenuationDistance=1000;def
 fDistantAOFarPower=2.3;custom
-fDistantAOFarBetaThicknessCorrection=0.15;default
+fDistantAOFarBetaThicknessCorrection=0.15;def
 
 [Shadows]
 fShadowCascadeSplitDistance0=6;low
 fShadowCascadeSplitDistance1=12;low
 fShadowCascadeSplitDistance2=50;low
-fShadowCascadeSplitDistance3=400;low
-uTerrainShadowMapSize=128;custom
+fShadowCascadeSplitDistance3=300;custom
+uTerrainShadowMapSize=4;custom
 uShadowMapCount4096=0;custom
 uShadowMapCount2048=0;custom
-uShadowMapCount1024=0;custom
-uShadowMapCount512=16;custom
-uShadowMapCount256=2;custom
-uShadowMapCount128=24;custom
-uDirectionalLightShadowMapResolution=512;custom
-uFocusShadowResolution=256;custom
+uShadowMapCount1024=3;custom
+uShadowMapCount512=0;custom
+uShadowMapCount256=0;custom
+uShadowMapCount128=1;custom
+uDirectionalLightShadowMapResolution=1024;low
+uFocusShadowResolution=4;custom
 uShadowFilteringQuality=0;med
 uShadowFilteringTransparencies=0;high
 bContactShadowsEnabled=0;off
@@ -91,7 +93,7 @@ uParticleLightingParticleCountQuality=1;med
 bEnableHalfResParticles=0;high
 
 [VolumetricLighting]
-uraVolumetricQuality=0;low
+uraVolumetricQuality=1;med
 bFogMapBlurHalfRes=1;low
 bVolumetricIndirectForceFallback=1;high
 uraVolumetricLightingPhaseFunction=1;low
@@ -100,8 +102,8 @@ uraVolumetricLightingPhaseFunction=1;low
 fVariableRateShadingVarianceCutoff=0.15;low
 
 [Crowd]
-fCrowdActorPlatformSpecificSpawnScalar=0.6;med
-uMaxCrowdActorCount=150;med
+fCrowdActorPlatformSpecificSpawnScalar=0.5;custom
+uMaxCrowdActorCount=75;custom
 
 [Terrain]
 bEnableStochasticTiling=1;high
@@ -138,27 +140,33 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 
 ```python
 [Display]
-bDynamicResolutionEnabled=1;
 bEnableVsync=0;
-bUseReducedShadingRate=1;
-bHalfResClouds=1;
-bHalfResolutionBlendedPasses=1;
-bHalfResolutionCorrection=1;
-bHDRColorGradingLUT=0;
 bTemporalAA_idTech7=0;
+bDynamicResolutionEnabled=1;
+bUseReducedShadingRate=1;
 fMaxAnisotropy=8;
 fMipBiasOffset=-1;
+bEnableTerrainShadowsInReflections=0;low
 
 [General]
 bAlwaysActive=1;
 SIntroSequence=0;
-uMainMenuDelayBeforeAllowSkip=1000;
+fAutoDoorFadeSecs=0.1;def 0.5
+fFastTravelFadeSecs=0.1;def 0.5
+fLoadGameFadeSecs=0.5;def 1
+fNormalDoorFadeSecs=0.1;def 0.4
+fNormalDoorFadeWait=0.01;def 0.01
+uMainMenuDelayBeforeAllowSkip=1000;def 5000
+
+[Interface]
+fDataMenuFadeInToGameTime=0.1;def 0.5
+fFadeToBlackFadeSeconds=0.5;def 1
 
 [Controls]
 bMouseAcceleration=0;
 fIronSightsPitchSpeedRatio=1;
-fMouseHeadingXScale=0.0199999996;
-fMouseHeadingYScale=0.0199999996;
+fMouseHeadingXScale=0.02;
+fMouseHeadingYScale=0.02;
 fPitchSpeedRatio=1;
 
 [Camera]
