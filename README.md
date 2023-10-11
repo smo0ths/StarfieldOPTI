@@ -1,8 +1,8 @@
-#### updated 10/10/2023 💫💫
+#### updated 10/11/2023 💫
 
 ##### contact me [smoothschannel](https://twitch.tv/smoothschannel) or [discord](https://discord.gg/tDZT7QSx8m)
 
-##### High overall quality replacement/optimization REMEMBER to change your overall quality to HIGH again after you replace and save the file contents*
+##### Medium.ini replacement/optimization REMEMBER to change your overall quality to Medium in game after you replace and save the file contents*
 
 ##### Turning down fRenderResolutionSetting and monitor resolution can drastically free up being gpu limited and gain fps.
 
@@ -14,13 +14,13 @@
 
 ---
 
-<details><summary>Open High.ini and copy paste you can use this shortcut or just find it</summary>
+<details><summary>Open Medium.ini and copy paste you can use this shortcut or just find it</summary>
 <p>
 press <kbd>⊞ Win+R</kbd> then type cmd
 <br>
 specify the drive you have Starfield installed C: G: I: X: S: and copy paste
 <br>
-start %windir%\explorer.exe “C:\SteamLibrary\steamapps\common\Starfield\High.ini”
+start %windir%\explorer.exe “C:\SteamLibrary\steamapps\common\Starfield\Medium.ini”
 </p>
 </details>
 
@@ -48,11 +48,11 @@ fGTAOPower=1.5;low
 fGTAOMaxAttenuationDistance=50;def
 fDistantAOMidSAORadius=2.8;custom
 fDistantAOMidMaxAttenuationDistance=600;med
-fDistantAOMidPower=1.8;custom
+fDistantAOMidPower=2;low
 fDistantAOMidBetaThicknessCorrection=0.2;def
 fDistantAOFarSAORadius=8;low
 fDistantAOFarMaxAttenuationDistance=1000;def
-fDistantAOFarPower=2.3;custom
+fDistantAOFarPower=2.5;low
 fDistantAOFarBetaThicknessCorrection=0.15;def
 
 [Shadows]
@@ -60,21 +60,20 @@ fShadowCascadeSplitDistance0=6;low
 fShadowCascadeSplitDistance1=12;low
 fShadowCascadeSplitDistance2=50;low
 fShadowCascadeSplitDistance3=300;custom
-uTerrainShadowMapSize=128;custom
-uShadowMapCount4096=0;custom
-uShadowMapCount2048=0;custom
-uShadowMapCount1024=4;custom
-uShadowMapCount512=0;custom
-uShadowMapCount256=0;custom
-uShadowMapCount128=24;custom 4 for PERFORMANCE
-uDirectionalLightShadowMapResolution=1024;low
-uFocusShadowResolution=4;custom
-uShadowFilteringQuality=0;med
-uShadowFilteringTransparencies=0;high
-bContactShadowsEnabled=0;off
-uTotalDynamicShadowMapRenderCount=16;med
-uAdditionalDynamicOnlyLightsBudget=1;med
-bDirectionalShadowmapsUseLODFade=0;med
+uTerrainShadowMapSize=256;low
+uShadowMapCount4096=0;low
+uShadowMapCount2048=0;low
+uShadowMapCount1024=16;low
+uShadowMapCount512=44;low
+uShadowMapCount256=128;low
+uShadowMapCount128=128;low
+uDirectionalLightShadowMapResolution=512;custom
+uFocusShadowResolution=512;custom
+uShadowFilteringQuality=0;low
+uShadowFilteringTransparencies=0;low
+bContactShadowsEnabled=0;low
+uTotalDynamicShadowMapRenderCount=12;low
+uAdditionalDynamicOnlyLightsBudget=0;low
 
 [MotionBlur]
 uMotionBlurQuality=0;custom
