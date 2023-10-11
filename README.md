@@ -1,16 +1,16 @@
-#### updated 10/9/2023 💫
+#### updated 10/10/2023 💫💫
 
-###### contact me [smoothschannel](https://twitch.tv/smoothschannel) or [discord](https://discord.gg/tDZT7QSx8m)
+##### contact me [smoothschannel](https://twitch.tv/smoothschannel) or [discord](https://discord.gg/tDZT7QSx8m)
 
-###### High overall quality replacement/optimization REMEMBER to change your overall quality to HIGH again after you replace and save the file contents*
+##### High overall quality replacement/optimization REMEMBER to change your overall quality to HIGH again after you replace and save the file contents*
 
-###### Turning down fRenderResolutionSetting and monitor resolution can drastically free up being gpu limited and gain fps.
+##### Turning down fRenderResolutionSetting and monitor resolution can drastically free up being gpu limited and gain fps.
 
-###### Starfield FSR2 Bridge DLSS MOD is your friend preset_override.txt set to D
+##### Starfield FSR2 Bridge DLSS MOD is your friend preset_override.txt set to D
 
-###### Increase fRenderResolutionSetting or monitor resolution till you are satified with the rasterization quality and your gpu isn't 100% usage all the time.
+##### Increase fRenderResolutionSetting or monitor resolution till you are satified with the rasterization quality and your gpu isn't 100% usage all the time.
 
-###### negative fMipBiasOffset can help sharpen textures when upscaling/upsampling but will cause shimmering if not done right
+##### negative fMipBiasOffset can help sharpen textures when upscaling/upsampling but will cause shimmering if not done right
 
 ---
 
@@ -60,13 +60,13 @@ fShadowCascadeSplitDistance0=6;low
 fShadowCascadeSplitDistance1=12;low
 fShadowCascadeSplitDistance2=50;low
 fShadowCascadeSplitDistance3=300;custom
-uTerrainShadowMapSize=4;custom
+uTerrainShadowMapSize=128;custom
 uShadowMapCount4096=0;custom
 uShadowMapCount2048=0;custom
-uShadowMapCount1024=3;custom
+uShadowMapCount1024=4;custom
 uShadowMapCount512=0;custom
 uShadowMapCount256=0;custom
-uShadowMapCount128=1;custom
+uShadowMapCount128=24;custom 4 for PERFORMANCE
 uDirectionalLightShadowMapResolution=1024;low
 uFocusShadowResolution=4;custom
 uShadowFilteringQuality=0;med
@@ -86,7 +86,7 @@ bHalfResIndirect=1;low
 [Reflections]
 uReflectionsResolution=128;med
 uReflectionProbeFacesToRenderPerFrame=2;med
-uReflectionProbeArraySize=24;med
+uReflectionProbeArraySize=24;high
 
 [Particle]
 uParticleLightingParticleCountQuality=1;med
@@ -150,7 +150,7 @@ bEnableTerrainShadowsInReflections=0;low
 
 [General]
 bAlwaysActive=1;
-SIntroSequence=0;
+sIntroSequence=0;
 fAutoDoorFadeSecs=0.1;def 0.5
 fFastTravelFadeSecs=0.1;def 0.5
 fLoadGameFadeSecs=0.5;def 1
@@ -168,9 +168,4 @@ fIronSightsPitchSpeedRatio=1;
 fMouseHeadingXScale=0.02;
 fMouseHeadingYScale=0.02;
 fPitchSpeedRatio=1;
-
-[Camera]
-fFarCameraDistanceOffset=0;
-fFPWorldFOV=90;
-fTPWorldFOV=87;
 ```
