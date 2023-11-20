@@ -1,16 +1,10 @@
-#### updated 10/11/2023 💫💫
+#### updated 11/20/2023 💫
 
 ##### contact me [smoothschannel](https://twitch.tv/smoothschannel) or [discord](https://discord.gg/tDZT7QSx8m)
 
 ##### Medium.ini replacement/optimization REMEMBER to change your overall quality to Medium in game after you replace and save the file contents*
 
-##### Turning down fRenderResolutionSetting and monitor resolution can drastically free up being gpu limited and gain fps.
-
-##### Starfield FSR2 Bridge DLSS MOD is your friend preset_override.txt set to D
-
-##### Increase fRenderResolutionSetting or monitor resolution till you are satified with the rasterization quality and your gpu isn't 100% usage all the time.
-
-##### negative fMipBiasOffset can help sharpen textures when upscaling/upsampling but will cause shimmering if not done right
+##### 60-70% scaling (balance/quality) is good for 1440p and 50% (performance) is good for 4k resolutions. (DLSS/FSR2/TAAU/XeSS)
 
 ---
 
@@ -46,7 +40,7 @@ uGrassMeshInstanceCullingSSFootprint=12;low
 fGTAORadius=0.3;def
 fGTAOPower=1.5;low
 fGTAOMaxAttenuationDistance=50;def
-fDistantAOMidSAORadius=2.8;custom
+fDistantAOMidSAORadius=3.0;low
 fDistantAOMidMaxAttenuationDistance=600;med
 fDistantAOMidPower=2;low
 fDistantAOMidBetaThicknessCorrection=0.2;def
@@ -70,7 +64,7 @@ uShadowMapCount128=128;low
 uDirectionalLightShadowMapResolution=512;custom
 uFocusShadowResolution=512;custom
 uShadowFilteringQuality=0;low
-uShadowFilteringTransparencies=0;low
+uShadowFilteringTransparencies=0;high
 bContactShadowsEnabled=0;low
 uTotalDynamicShadowMapRenderCount=12;low
 uAdditionalDynamicOnlyLightsBudget=0;low
@@ -106,7 +100,7 @@ uMaxCrowdActorCount=75;custom
 
 [Terrain]
 bEnableStochasticTiling=1;high
-bEnableStochasticTilingDominantPlane=0;med
+bEnableStochasticTilingDominantPlane=0;high
 bEnableTerrainPlanarMapping=1;high
 fTerrainDisplacementErrorThreshold=1;med
 
@@ -144,7 +138,6 @@ bTemporalAA_idTech7=0;
 bDynamicResolutionEnabled=1;
 bUseReducedShadingRate=1;
 fMaxAnisotropy=8;
-fMipBiasOffset=-1;
 bEnableTerrainShadowsInReflections=0;low
 
 [General]
