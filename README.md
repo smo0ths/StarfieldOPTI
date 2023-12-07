@@ -1,10 +1,12 @@
-#### updated 11/20/2023 💫
+#### updated 12/7/2023 💫
 
 ##### contact me [smoothschannel](https://twitch.tv/smoothschannel) or [discord](https://discord.gg/tDZT7QSx8m)
 
 ##### Medium.ini replacement/optimization REMEMBER to change your overall quality to Medium in game after you replace and save the file contents*
 
-##### 60-70% scaling (balance/quality) is good for 1440p and 50% (performance) is good for 4k resolutions. (DLSS/FSR2/TAAU/XeSS)
+##### 1440p scaling (DLSS/FSR2/TAAU/XeSS) 58%/67%/70% resolution scale (balance/quality) -1/-0.5 (recommended negative LOD bias)
+
+##### 4k scaling (DLSS/FSR2/TAAU/XeSS) 50% resolution scale (performance) -1.5/-1 (recommended negative LOD bias)
 
 ---
 
