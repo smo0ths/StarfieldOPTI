@@ -1,12 +1,14 @@
-#### updated 12/7/2023 💫
+#### updated 1/29/2024 💫
 
 ##### contact me [smoothschannel](https://twitch.tv/smoothschannel) or [discord](https://discord.gg/tDZT7QSx8m)
 
 ##### Medium.ini replacement/optimization REMEMBER to change your overall quality to Medium in game after you replace and save the file contents*
 
-##### 1440p scaling (DLSS/FSR2/TAAU/XeSS) 58%/67%/70% resolution scale (balance/quality) -1/-0.5 (recommended negative LOD bias)
+##### 2560x1440 use 58%(balance) 67%(quality) 70%(custom/TAAU) scaling for PERFORMANCE (DLSS123/TAAU/TSR/CAS/FSR123/XeSS)
 
-##### 4k scaling (DLSS/FSR2/TAAU/XeSS) 50% resolution scale (performance) -1.5/-1 (recommended negative LOD bias)
+##### 3200x1800 use 33%(ultra performance) 50%(performance/TAAU) scaling for PERFORMANCE (DLSS123/TAAU/TSR/CAS/FSR123/XeSS)
+
+##### 3840x2160 use 33%(ultra performance) 50%(performance/TAAU) scaling for PERFORMANCE (DLSS123/TAAU/TSR/CAS/FSR123/XeSS)
 
 ---
 
@@ -59,8 +61,8 @@ fShadowCascadeSplitDistance3=300;custom
 uTerrainShadowMapSize=256;low
 uShadowMapCount4096=0;low
 uShadowMapCount2048=0;low
-uShadowMapCount1024=16;low
-uShadowMapCount512=44;low
+uShadowMapCount1024=0;custom
+uShadowMapCount512=22;custom
 uShadowMapCount256=128;low
 uShadowMapCount128=128;low
 uDirectionalLightShadowMapResolution=512;custom
@@ -141,10 +143,12 @@ bDynamicResolutionEnabled=1;
 bUseReducedShadingRate=1;
 fMaxAnisotropy=8;
 bEnableTerrainShadowsInReflections=0;low
+fGamma=2.2;custom
+fMipBiasOffset=0;
 
 [General]
 bAlwaysActive=1;
-sIntroSequence=0;
+SIntroSequence=0;
 fAutoDoorFadeSecs=0.1;def 0.5
 fFastTravelFadeSecs=0.1;def 0.5
 fLoadGameFadeSecs=0.5;def 1
