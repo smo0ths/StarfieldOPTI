@@ -1,4 +1,4 @@
-#### updated 1/29/2024 💫
+#### updated 2/7/2024 💫
 
 ##### contact me [smoothschannel](https://twitch.tv/smoothschannel) or [discord](https://discord.gg/tDZT7QSx8m)
 
@@ -28,7 +28,7 @@ bVolumetricLightingEnable=1;high
 bDepthOfFieldEnable=0;low
 
 [Decals]
-uMaxDecals=20;custom
+uMaxDecals=25;low
 uMaxSkinDecals=5;med
 uMaxSkinDecalsPerActor=5;med
 iMaxDecalsPerFrame=3;low
@@ -61,8 +61,8 @@ fShadowCascadeSplitDistance3=300;custom
 uTerrainShadowMapSize=256;low
 uShadowMapCount4096=0;low
 uShadowMapCount2048=0;low
-uShadowMapCount1024=0;custom
-uShadowMapCount512=22;custom
+uShadowMapCount1024=16;low
+uShadowMapCount512=44;low
 uShadowMapCount256=128;low
 uShadowMapCount128=128;low
 uDirectionalLightShadowMapResolution=512;custom
@@ -72,6 +72,7 @@ uShadowFilteringTransparencies=0;high
 bContactShadowsEnabled=0;low
 uTotalDynamicShadowMapRenderCount=12;low
 uAdditionalDynamicOnlyLightsBudget=0;low
+bDirectionalShadowmapsUseLODFade=0;high
 
 [MotionBlur]
 uMotionBlurQuality=0;custom
@@ -87,7 +88,7 @@ uReflectionProbeArraySize=24;high
 
 [Particle]
 uParticleLightingParticleCountQuality=1;med
-bEnableHalfResParticles=0;high
+bEnableHalfResParticles=0;ultra
 
 [VolumetricLighting]
 uraVolumetricQuality=0;low
@@ -103,9 +104,9 @@ fCrowdActorPlatformSpecificSpawnScalar=0.5;custom
 uMaxCrowdActorCount=75;custom
 
 [Terrain]
-bEnableStochasticTiling=1;high
+bEnableStochasticTiling=1;ultra
 bEnableStochasticTilingDominantPlane=0;high
-bEnableTerrainPlanarMapping=1;high
+bEnableTerrainPlanarMapping=1;ultra
 fTerrainDisplacementErrorThreshold=1;med
 
 [DynamicResolution]
@@ -116,12 +117,22 @@ iContactShadowsQuality=0;off
 bContactShadowsEnabled=0;off
 bContactShadowHalfResolution=0;high
 iBlurRadius=0;custom
+bLayeredSkinnedContactShadows=0;med
+bFirstPersonContactShadows=0;high
 
 [ContactShadow]
 iContactShadowsQuality=0;off
 
 [PostEffects]
 fCASSharpnessSetting=0;custom
+
+[LODManager]
+uLODStreamingAdjacencyLoad=2;med
+
+[ViewDistance]
+fBlockLevel0Distance=450;med
+fBlockLevel1Distance=750;med
+fBlockLevel2Distance=1200;med
 ```
 
 ---
@@ -143,8 +154,13 @@ bDynamicResolutionEnabled=1;
 bUseReducedShadingRate=1;
 fMaxAnisotropy=8;
 bEnableTerrainShadowsInReflections=0;low
-fGamma=2.2;custom
-fMipBiasOffset=0;
+fGamma=2.4;creation engine set manually in prefs to be exact
+fGammaUI=2.4;creation engine set manually in prefs to be exact
+fBrightnessHDR=0.8;
+fMipBiasOffset=0;test
+fFilmGrainIntensity=0;
+fRenderResolutionScaleFactor=0.5;
+sSupportedResolutionsList=640x360, 1280x720, 1600x900, 1920x1080, 2560x1440, 3200x1800, 3840x2160;
 
 [General]
 bAlwaysActive=1;
@@ -166,4 +182,10 @@ fIronSightsPitchSpeedRatio=1;
 fMouseHeadingXScale=0.02;
 fMouseHeadingYScale=0.02;
 fPitchSpeedRatio=1;
+
+[Camera]
+fWorkshopIsoCamDistanceSpeed=1;def 1 set manually in prefs to be exact
+fTPWorldFOV=75;def 75 set manually in prefs to be exact
+fFPGeometryFOV=90;def 85 set manually in prefs to be exact
+fFPWorldFOV=90;def 85 set manually in prefs to be exact
 ```
