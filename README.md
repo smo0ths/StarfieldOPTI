@@ -4,6 +4,8 @@
 
 ##### Medium.ini replacement/optimization REMEMBER to change your overall quality to Medium in game after you replace and save the file contents*
 
+##### delete Pipeline.cache in %localappdata%/Starfield
+
 ---
 
 <details><summary>Open Medium.ini and copy paste you can use this shortcut or just find it</summary>
@@ -149,19 +151,6 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 </details>
 
 ```python
-[Display]
-bEnableVsync=0;
-bDynamicResolutionEnabled=1;
-bUseReducedShadingRate=1;
-fMaxAnisotropy=16;
-bEnableTerrainShadowsInReflections=0;low
-fGamma=2.4;creation engine set manually in prefs to be exact
-fGammaUI=2.4;creation engine set manually in prefs to be exact
-fBrightnessHDR=0.8;
-fMipBiasOffset=0;test
-fFilmGrainIntensity=0;
-fRenderResolutionScaleFactor=0.5;
-
 [General]
 bAlwaysActive=1;
 SIntroSequence=0;
