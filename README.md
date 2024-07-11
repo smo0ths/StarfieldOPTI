@@ -161,7 +161,6 @@ fBrightnessHDR=0.8;
 fMipBiasOffset=0;test
 fFilmGrainIntensity=0;
 fRenderResolutionScaleFactor=0.5;
-sSupportedResolutionsList=3328x1872;
 
 [General]
 bAlwaysActive=1;
