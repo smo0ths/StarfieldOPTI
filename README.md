@@ -1,14 +1,8 @@
-#### updated 2/7/2024 💫
+#### updated 7/11/2024 💫
 
 ##### contact me [smoothschannel](https://twitch.tv/smoothschannel) or [discord](https://discord.gg/tDZT7QSx8m)
 
 ##### Medium.ini replacement/optimization REMEMBER to change your overall quality to Medium in game after you replace and save the file contents*
-
-##### 2560x1440 use 58%(balance) 67%(quality) 70%(custom/TAAU) scaling for PERFORMANCE (DLSS123/TAAU/TSR/CAS/FSR123/XeSS)
-
-##### 3200x1800 use 33%(ultra performance) 50%(performance/TAAU) scaling for PERFORMANCE (DLSS123/TAAU/TSR/CAS/FSR123/XeSS)
-
-##### 3840x2160 use 33%(ultra performance) 50%(performance/TAAU) scaling for PERFORMANCE (DLSS123/TAAU/TSR/CAS/FSR123/XeSS)
 
 ---
 
@@ -73,6 +67,8 @@ bContactShadowsEnabled=0;low
 uTotalDynamicShadowMapRenderCount=12;low
 uAdditionalDynamicOnlyLightsBudget=0;low
 bDirectionalShadowmapsUseLODFade=0;high
+uDirectionalShadowmapsUseLODFadeLastCascadeIndex=0;med
+uCascadeUpdateStrategyMode=1;med
 
 [MotionBlur]
 uMotionBlurQuality=0;custom
@@ -133,6 +129,12 @@ uLODStreamingAdjacencyLoad=2;med
 fBlockLevel0Distance=450;med
 fBlockLevel1Distance=750;med
 fBlockLevel2Distance=1200;med
+
+[Transparency]
+fEffectsHighMinAlphaThreshold=2;med
+fEffectsLowMinAlphaThreshold=1.2;med
+fEffectsAlphaThresholdFadeFar=30;med
+fEffectsAlphaThresholdFadeNear=15;med
 ```
 
 ---
@@ -149,10 +151,9 @@ press <kbd>⊞ Win+R</kbd> then copy paste
 ```python
 [Display]
 bEnableVsync=0;
-bTemporalAA_idTech7=0;
 bDynamicResolutionEnabled=1;
 bUseReducedShadingRate=1;
-fMaxAnisotropy=8;
+fMaxAnisotropy=16;
 bEnableTerrainShadowsInReflections=0;low
 fGamma=2.4;creation engine set manually in prefs to be exact
 fGammaUI=2.4;creation engine set manually in prefs to be exact
@@ -160,7 +161,7 @@ fBrightnessHDR=0.8;
 fMipBiasOffset=0;test
 fFilmGrainIntensity=0;
 fRenderResolutionScaleFactor=0.5;
-sSupportedResolutionsList=640x360, 1280x720, 1600x900, 1920x1080, 2560x1440, 3200x1800, 3840x2160;
+sSupportedResolutionsList=3328x1872;
 
 [General]
 bAlwaysActive=1;
