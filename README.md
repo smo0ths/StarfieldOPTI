@@ -1,7 +1,5 @@
 #### updated 7/11/2024 💫
 
-##### contact me [smoothschannel](https://twitch.tv/smoothschannel) or [discord](https://discord.gg/tDZT7QSx8m)
-
 ##### Medium.ini replacement/optimization REMEMBER to change your overall quality to Medium in game after you replace and save the file contents*
 
 ##### delete Pipeline.cache in %localappdata%/Starfield
