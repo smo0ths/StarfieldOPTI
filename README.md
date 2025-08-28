@@ -1,4 +1,4 @@
-#### updated 7/11/2024 💫
+#### updated 8/26/2025 💫
 
 ##### Medium.ini replacement/optimization REMEMBER to change your overall quality to Medium in game after you replace and save the file contents*
 
@@ -61,12 +61,12 @@ uShadowMapCount256=128;low
 uShadowMapCount128=128;low
 uDirectionalLightShadowMapResolution=512;custom
 uFocusShadowResolution=512;custom
-uShadowFilteringQuality=0;low
+uShadowFilteringQuality=0;verylow
 uShadowFilteringTransparencies=0;high
 bContactShadowsEnabled=0;low
 uTotalDynamicShadowMapRenderCount=12;low
 uAdditionalDynamicOnlyLightsBudget=0;low
-bDirectionalShadowmapsUseLODFade=0;high
+bDirectionalShadowmapsUseLODFade=0;med
 uDirectionalShadowmapsUseLODFadeLastCascadeIndex=0;med
 uCascadeUpdateStrategyMode=1;med
 
@@ -87,7 +87,7 @@ uParticleLightingParticleCountQuality=1;med
 bEnableHalfResParticles=0;ultra
 
 [VolumetricLighting]
-uraVolumetricQuality=0;low
+uraVolumetricQuality=0;verylow
 bFogMapBlurHalfRes=1;low
 bVolumetricIndirectForceFallback=1;high
 uraVolumetricLightingPhaseFunction=1;low
@@ -101,7 +101,7 @@ uMaxCrowdActorCount=75;custom
 
 [Terrain]
 bEnableStochasticTiling=1;ultra
-bEnableStochasticTilingDominantPlane=0;high
+bEnableStochasticTilingDominantPlane=0;med
 bEnableTerrainPlanarMapping=1;ultra
 fTerrainDisplacementErrorThreshold=1;med
 
